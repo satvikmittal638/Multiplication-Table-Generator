@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Choose Tables"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Table of 1"
+        android:id="@+id/tabname"
+        android:textSize="20dp"
+        android:layout_below="@id/seekTable"
+        android:layout_centerHorizontal="true"/>
+    <SeekBar
+        android:id="@+id/seekTable"
+        android:layout_below="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:id="@+id/tables"
+        android:layout_below="@+id/tabname"/>
+
+
+
+</RelativeLayout>
